@@ -5,5 +5,99 @@
 }
 
 body{
-    background-color:rosybrown;
+    padding: 0 3rem;
+}
+.logo{
+    display: inline;
+    
+}
+
+.logo >img{
+    vertical-align: middle;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.logo span{
+    font-weight: bolder;
+    font-size: 25px;
+
+}
+
+.nav-items{
+    list-style: none;
+    display: inline;
+}
+
+nav{
+    padding: 1rem 0;
+}
+
+.nav-item{
+    display: inline;
+    
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #817e84;
+    padding-left: 1.5rem;
+
+}
+
+.nav-item a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.main-left-button{
+    padding:1rem 0;
+    width: 100%;
+    border-radius: 5px;
+    background-color: purple;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+
+}
+
+.main-left p{
+    margin: 1rem 0;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight:900;
+    line-height: 1;
+  
+}
+
+.title a {
+    text-decoration: none;
+}
+
+.main-right{
+    margin-right: -3rem;
+}
+
+.categories-container{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 0.5rem;
+    margin-top: 4rem;
+    
+    
+}
+
+.categories-container div{
+    background-color: aqua;
+    border-radius: 7px;
+    height: 250px;
 }
