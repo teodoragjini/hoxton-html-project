@@ -170,7 +170,12 @@ footer{
     text-align: center;
     padding: 3rem 0;
     margin: 0 -3rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: auto;
 }
 
 .footer-items{
@@ -195,6 +200,15 @@ footer{
     }
 }
 
+@media screen and (min-width:800px) {
+    grid-area {
+    "header"
+    "left-main"
+    "right-main"
+    "single-button"
+    "footer";
+    
+}
 
 .product-description{
     list-style: none;
