@@ -120,10 +120,14 @@ nav{
     height: 250px;
 }
 
+.categories-container div:hover{
+  transform: scale(1.10);
+}
+
 
 .product-container{
     display: grid;
-    grid-template-columns: repeat(1,auto);
+    grid-template-columns: repeat(4,fr);
     gap:0.5rem;
     margin-top: 4rem;
     border-radius: 5px;
@@ -132,8 +136,13 @@ nav{
     border-radius: 5px;
     height: 100%;
     background-color: white;
-    border: 1px solid grey;
+    border: 1px solid rgb(234, 232, 232);
     padding: 0 1rem 1rem 1rem;
+}
+
+.product-container div:hover{
+    transform: scale(1.10);
+
 }
 
 .product-container div > img {
@@ -150,8 +159,8 @@ nav{
 }
 
 .category-item-text{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 1rem;
 }
 
@@ -191,6 +200,10 @@ footer{
     list-style: none;
     margin: 1rem 0;
 }
+.product-title a {
+    text-decoration: none;
+    color: black;
+}
 
 .product-discount-text{
     color: red;
@@ -211,7 +224,42 @@ footer{
 }
 
 .left-main img {
-    border: 1px solid grey;
+    border: 1px solid rgb(247, 243, 243);
 }
  
+.products{
+    background-color:#f3f4f6;
+}
 
+.right-main{
+    margin-left: 2rem;
+}
+
+.right-main p{
+    margin: 0.7rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.right-main span{
+    color: #767d89;
+    font-size: 1.2rem;
+}
+
+.single-button{
+    padding:1rem 0;
+    width: 30%;
+    border-radius: 5px;
+    background-color: rgb(148, 16, 148);
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+}
+
+.single-button span{
+    align-items: center;
+    padding-left: 10px;
+}
