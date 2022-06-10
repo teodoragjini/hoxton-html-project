@@ -58,9 +58,10 @@ nav{
 
 .main-container{
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: (auto-fit,2fr);
     gap: 20px;
 }
+
 
 .main-left-button{
     padding:1rem 0;
@@ -127,7 +128,7 @@ nav{
 
 .product-container{
     display: grid;
-    grid-template-columns: repeat(4,fr);
+    grid-template-columns: repeat(1,fr);
     gap:0.5rem;
     margin-top: 4rem;
     border-radius: 5px;
@@ -150,6 +151,9 @@ nav{
     border-radius: 5px;
 }
 
+.category{
+    position: relative;
+}
 
 .categories-container div > div {
     position: absolute;
@@ -194,21 +198,25 @@ footer{
     justify-content: center;
 }
 
-@media screen and (min-width:640px) {
+@media screen and (min-width:800px) {
     .categories-container, .product-container {
         grid-template-columns: repeat(4,auto);
     }
 }
 
 @media screen and (min-width:800px) {
-    grid-area {
-    "header"
-    "left-main"
-    "right-main"
-    "single-button"
-    "footer";
-    
+   .single-product-container{
+       grid-template-columns: auto auto;
+   }
 }
+
+@media screen and (min-width:800px){
+    .main-container{
+        grid-template-columns:2fr 3fr;
+    }
+}
+
+
 
 .product-description{
     list-style: none;
@@ -234,11 +242,15 @@ footer{
 
 .single-product-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns:(auto-fit,auto);
+    border: 1px solid rgb(238, 238, 238);
+    margin-top: 1rem;
 }
 
 .left-main img {
-    border: 1px solid rgb(247, 243, 243);
+    /* border: 1px solid rgb(247, 243, 243); */
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
  
 .products{
@@ -247,6 +259,7 @@ footer{
 
 .right-main{
     margin-left: 2rem;
+    margin-top: 1rem;
 }
 
 .right-main p{
@@ -258,6 +271,14 @@ footer{
 .right-main span{
     color: #767d89;
     font-size: 1.2rem;
+}
+
+.right-main ul li{
+    list-style: none;
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: 1rem;
+    color: #767d89;
 }
 
 .single-button{
@@ -277,3 +298,4 @@ footer{
     align-items: center;
     padding-left: 10px;
 }
+
